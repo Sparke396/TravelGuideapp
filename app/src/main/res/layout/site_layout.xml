@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8sp"
+    android:background="@drawable/hollow_background"
+    android:orientation="vertical"
+    android:padding="8sp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/siteNameView"
+            style="@style/myText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bomaby Taj"
+            android:textColor="@color/app_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/siteCityView"
+            style="@style/myText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=", Mumbai"
+            android:textColor="@color/app_color" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/aboutSiteView"
+        style="@style/myText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/app_color" />
+
+    <ImageView
+        android:id="@+id/siteImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/direction"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2sp"
+            android:layout_weight="1"
+            android:drawableStart="@android:drawable/ic_menu_directions"
+            android:drawableTint="@color/app_color"
+            android:gravity="center_vertical"
+            android:text="Direction"
+            android:textColor="@color/app_color" />
+
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2sp"
+            android:layout_weight="1"
+            android:drawableStart="@android:drawable/ic_menu_info_details"
+            android:drawableTint="@color/app_color"
+            android:gravity="center_vertical"
+            android:text="Guide info"
+            android:textColor="@color/app_color" />
+    </LinearLayout>
+</LinearLayout>

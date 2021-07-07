@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6E260E"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:src="@mipmap/ic_tour" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="2"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="16sp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="Select image from gallery : "
+            android:textColor="#6E260E" />
+<ImageView
+    android:layout_width="100sp"
+    android:layout_height="100sp"
+    android:src="@android:drawable/ic_menu_camera"
+    android:layout_gravity="center"
+    android:layout_marginTop="8sp"
+    android:onClick="openGallery"
+    android:id="@+id/guideImageView"
+    />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:maxLines="1"
+            android:text="Enter valid Email"
+            android:textColor="#6E260E" />
+
+        <EditText
+            android:id="@+id/emailEt"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#6E260E"
+            android:textColor="#0C327E"
+            android:textColorHint="#7A0C327E" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:maxLines="1"
+            android:text="Full Name"
+            android:textColor="#6E260E" />
+
+        <EditText
+            android:id="@+id/nameEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#6E260E"
+            android:textColor="#0C327E"
+            android:textColorHint="#7A0C327E" />
+   <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:maxLines="1"
+            android:text="Mobile Number"
+            android:textColor="#6E260E" />
+
+        <EditText
+            android:id="@+id/mobileEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#6E260E"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textColor="#0C327E"
+            android:textColorHint="#7A0C327E" />
+   <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:maxLines="1"
+            android:text="Password for Login"
+            android:textColor="#6E260E" />
+
+        <EditText
+            android:id="@+id/passwordEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#6E260E"
+            android:inputType="textPassword"
+            android:textColor="#0C327E"
+            android:textColorHint="#7A0C327E" />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:maxLines="1"
+            android:text="Aadhar Card Number"
+            android:textColor="#6E260E" />
+
+        <EditText
+            android:id="@+id/aadharEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#6E260E"
+            android:textColor="#0C327E"
+            android:inputType="number"
+            android:textColorHint="#7A0C327E" />
+
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:background="@drawable/solid_background"
+            android:text="Register"
+            android:textColor="#FFF" />
+
+    </LinearLayout>
+</LinearLayout>

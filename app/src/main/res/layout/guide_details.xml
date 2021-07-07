@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8sp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/guideImage"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:layout_margin="8sp" />
+
+    <TextView
+        android:id="@+id/guideName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4sp" />
+
+    <TextView
+        android:id="@+id/guideEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4sp" />
+
+    <TextView
+        android:id="@+id/guideMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4sp" />
+
+    <TextView
+        android:id="@+id/aadhar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4sp" />
+
+    <TextView
+        android:id="@+id/regDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4sp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <Button
+        android:id="@+id/callGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call guide"
+        android:drawableLeft="@android:drawable/ic_menu_call"
+        android:drawableTint="@color/app_color"
+        android:background="@drawable/hollow_background"
+        android:paddingEnd="18sp"
+        android:layout_marginEnd="8sp"
+        android:paddingStart="18sp"/>
+
+</LinearLayout>
+</LinearLayout>

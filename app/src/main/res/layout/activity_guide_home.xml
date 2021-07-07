@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GuideHomeActivity">
+<include layout="@layout/toolbar"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2sp"
+        android:background="@color/app_color"
+        android:layout_margin="8sp"/>
+    <TextView
+        android:id="@+id/guideInfoTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableTint="@color/app_color"
+        android:padding="8sp"
+        android:gravity="center_vertical"
+        android:textColor="@color/app_color"
+        android:fontFamily="serif"
+        android:layout_gravity="end"
+        android:text="Guide name"
+        android:textSize="18sp"
+        android:onClick="showInfo"
+        android:drawableEnd="@android:drawable/ic_dialog_info"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Place"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/app_color"
+        android:onClick="newPlaceIntent"
+        android:background="@drawable/hollow_background"
+        android:drawableTop="@android:drawable/ic_menu_add"
+        android:drawableTint="@color/app_color"
+        android:padding="8sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2sp"
+        android:background="@color/app_color"
+        android:layout_margin="8sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8sp"
+        android:textColor="@color/app_color"
+        android:text="Your Places : "/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/guidePlacesListView"/>
+
+</LinearLayout>

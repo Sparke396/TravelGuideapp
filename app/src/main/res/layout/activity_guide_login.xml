@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".GuideLoginActivity">
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+    <LinearLayout
+        android:layout_below="@id/toolbar"
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:background="#6E260E"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="200sp"
+            android:layout_height="200sp"
+            android:src="@mipmap/ic_tour" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll"
+        android:layout_margin="12sp"
+        android:background="@drawable/hollow_background"
+        android:orientation="vertical"
+        android:padding="12dp">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="8sp"
+            android:textStyle="bold"
+            android:text="Guide Login"
+            android:textColor="#A0522D"
+            android:textSize="16sp" />
+        <TextView
+            style="@style/myText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0sp"
+            android:text="Enter Registered Email" />
+
+
+        <EditText
+            android:id="@+id/emailEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#6E260E"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:padding="8sp"
+            android:textColor="#6E260E"
+            android:textSize="16sp" />
+
+        <TextView
+            style="@style/myText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:padding="0sp"
+            android:text="Password here" />
+
+
+        <EditText
+            android:id="@+id/passwordEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#6E260E"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:padding="8sp"
+            android:textColor="#6E260E"
+            android:textSize="16sp" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8sp"
+            android:background="@drawable/solid_background"
+            android:text="Log in"
+            android:onClick="login"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hollow_background"
+            android:gravity="center_horizontal"
+            android:padding="8sp"
+            android:onClick="showPopup"
+            android:text="Guide Registration"
+            android:textColor="#6E260E"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16sp"
+        android:gravity="center"
+        android:text="App designed by Aditi"
+        android:textColor="#6E260E"
+        android:textStyle="bold" />
+
+</RelativeLayout>
